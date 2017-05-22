@@ -1,0 +1,176 @@
+html {
+    background-color: #F1F1F1;
+    font-family: 'Glegoo', serif;
+}
+
+.container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    z-index: 1;
+}
+
+
+.divBody {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border: 1px solid;
+    border-color: black;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.divHeadBody {
+    width: 100%;
+    height: 8%;
+    background-color: skyblue;
+    z-index: 2;
+    min-width: 500px;
+}
+
+#textHeadBodyTitle {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: auto;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+.divDataBody {
+    position: relative;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border: 1px solid;
+    border-color: black;
+}
+
+
+.textTitleDataBody {
+    position: relative;
+    margin: 0px;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-weight: bolder;
+    font-family: 'Glegoo', serif;
+    font-size: 18px;
+}
+
+#textTitleResult {
+    position: relative;
+    margin: 0px;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-weight: bolder;
+    font-family: 'Glegoo', serif;
+    font-size: 18px;
+    display: none;
+}
+
+
+#separador{ 
+    width:80%;
+    display: none;
+}
+
+/*----------datos----------*/
+
+#selectTypeCalc {
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#textDataBody {
+    position: relative;
+    margin: 0px;
+    margin-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 3%;
+    font-weight: bolder;
+    font-family: 'Glegoo', serif;
+    font-size: 18px;
+    display: none;
+}
+
+
+.divDataSexo {
+    position: relative;
+    padding-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 95%;
+    float: left;
+    display: none;
+}
+
+
+#divDataEdad, #divDataEstatura, #divDataPeso {
+    position: relative;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 25%;
+    float: left;
+    display: none;
+}
+
+
+#textboxEdad, #textboxEstatura, #textboxPeso {
+    width: 35%;
+    margin-top: 2%;
+}
+
+#botonCalcular {
+    font-size: 16px;     
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 45%;
+    display: none;
+}
+
+
+#resultadosNumericos {
+    margin-left: 10%; 
+    margin-bottom: 3%;
+    display: none;
+}
+
+#resultNum {
+    width: 15%;
+    margin-left: 3%;
+}
+
+#resultadoTexto {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    display: none;
+}
+
+#parrafoResultadoFinal {
+    width: 80%;
+}
+
+.alert {
+    background-color: #F6CECE;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 3px;
+    border: 1px solid #FA5858;
+    display: none;
+}

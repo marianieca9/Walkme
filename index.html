@@ -1,0 +1,83 @@
+<html>
+    <header>
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+        <link href="calculadora.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="calculadora.js"></script>
+        
+     
+        <script type="text/javascript">(function() {var walkme = document.createElement('script'); walkme.type = 'text/javascript'; walkme.async = true; walkme.src = 'https://cdn.walkme.com/users/859be302fdc54f62b68b6f627bf1a8fc/walkme_859be302fdc54f62b68b6f627bf1a8fc_https.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(walkme, s); window._walkmeConfig = {smartLoad:true}; })();</script>  
+        
+    </header>
+
+    
+    <body>
+        <div class="container">
+            
+            <div class="divBody">
+                
+                <div class="divHeadBody">
+                    <p id="textHeadBodyTitle">Calculadora IMC, Peso Ideal y Tasa Metabolismo Basal</p>
+                </div>
+                
+                <div class="divDataBody">
+                    <p class="textTitleDataBody">Seleccione el tipo de cálculo que desea:</p>
+                    
+                    <select id="selectTypeCalc" onchange="cambio()">
+                      <option value="vacio" id="idVacio" selected></option>
+                      <option value="imc" id="idIMC">IMC</option>
+                      <option value="pesoIdeal" id="idPesoIdeal">Peso Ideal</option>
+                      <option value="tmb" id="idTMB">TMB</option>
+                    </select>
+                    
+                    <hr id="separador">
+                    
+                    <!--Datos a pedir-->
+                    <p id="textDataBody">Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
+                    
+                    <div class="alert" id="alertCampoVacio"></div>
+                    
+                    <div class="divDataSexo" id="radioSexo">
+                        <input id="radioSexoH"  name="radioSexo" type="radio" value="hombre">Hombre
+                        <input id="radioSexoM"  name="radioSexo" type="radio" value="mujer">Mujer
+                    </div>
+                    
+                    <div id="divDataEdad">
+                        <label>Edad:</label>
+                        <input id="textboxEdad" name="textboxEdad" type="number" min="1" max="120">
+                    </div>
+                    
+                    <div id="divDataEstatura">
+                        <label>Estatura:</label>
+                        <input id="textboxEstatura" name="textboxEstatura" type="number" min="0.30" max="3" step="0.01">
+                    </div>
+                    
+                    <div id="divDataPeso">
+                        <label>Peso:</label>
+                        <input id="textboxPeso" name="textboxPeso" type="number" min="5" step="0.01">
+                    </div>
+                    
+                    <div class="row">
+                        <button id="botonCalcular" onclick="comprobarFormulario()">Calcular</button>
+                    </div>
+                    <hr id="separador">
+                    
+                    <!--Resultados-->          
+                    <p id="textTitleResult">Resultados</p>
+                        
+                    <div id="resultadosNumericos">
+                        <label id="etiqueta"></label>
+                        <input id="resultNum" readOnly>
+                    </div>
+
+                    <div id="resultadoTexto">
+                        <textarea id="parrafoResultadoFinal" class="parrafoResultado" rows="1"></textarea>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+        </div>
+    </body>
+</html>
